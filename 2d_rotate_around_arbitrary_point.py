@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
-# 功能：
-# 绘制一个五边形，可以绕任意点进行2d旋转
-# 操作说明：
-# 鼠标双击改变旋转的锚点，键盘a键逆时针旋转，d键顺时针旋转，当然...是在右手系下
+# 功能：绘制一个五边形，可以绕任意点进行2d旋转
+# 操作说明：鼠标双击改变旋转的锚点，键盘a键逆时针旋转，d键顺时针旋转，当然...是在右手系下
 
 import numpy as np
 import cv2
@@ -72,7 +70,6 @@ cv2.polylines(img_canvas, [ppp], True, (0, 255, 255), 3)
 cv2.imshow('canvas', img_canvas)
 
 while True:
-
     key = cv2.waitKey(0) & 0xFF
     img_canvas = img.copy()
 
